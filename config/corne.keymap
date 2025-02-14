@@ -35,13 +35,13 @@
 // -----------------------------------------------------------------------------------------
 // | TAB |  F1        |  F2  | F3    |  F4  | F5   |     | 1 | 2 | 3 | - | = | BKSP |
 // | CTRL| C_VOL_UP   | LEFT | RIGHT | UP   | C_MUTE |   | 4 | 5 | 6 | + | / |   *  |
-// | ESC | C_VOL_DN | HOME | END   | DOWN | C_PP |       | 7 | 8 | 9 | 0 |   | SHFT |
+// | ESC | C_VOL_DN |PG_DOWN | PG_UP | DOWN | C_PP |     | 7 | 8 | 9 | 0 |   | SHFT |
 //                           | GUI   |      | RET  |     | SPC |  .  | ALT |
                         label = "Lower";
                         bindings = <
    &kp TAB   &kp F1       &kp F2   &kp F3    &kp F4   &kp F5         &kp N1 &kp N2 &kp N3 &kp MINUS &kp EQUAL &kp BSPC
    &kp LCTRL &kp C_VOL_UP &kp LEFT &kp RIGHT &kp UP   &kp C_MUTE     &kp N4 &kp N5 &kp N6 &kp PLUS  &kp FSLH  &kp KP_MULTIPLY
-   &kp ESC   &kp C_VOL_DN &kp HOME &kp END   &kp DOWN &kp C_PP       &kp N7 &kp N8 &kp N9 &kp N0    &trans    &kp RSHFT
+   &kp ESC   &kp C_VOL_DN &kp PG_DN &kp PG_UP   &kp DOWN &kp C_PP       &kp N7 &kp N8 &kp N9 &kp N0    &trans    &kp RSHFT
                                 &kp LGUI     &trans       &kp RET      &kp SPACE  &kp DOT   &kp RALT
                         >;
                 };
