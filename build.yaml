@@ -18,6 +18,12 @@
 # jobs:
 #  build:
 #    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+name: Build ZMK firmware
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.2
     
 include:
   - board: nice_nano
@@ -28,10 +34,10 @@ include:
     shield: settings_reset
 
   
-  - board: seeeduino_xiao_ble
-    shield: corne_central_dongle
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+  #- board: seeeduino_xiao_ble
+  #  shield: corne_central_dongle
+  #- board: seeeduino_xiao_ble
+  #  shield: settings_reset
 
   #   include:
   # - board: seeeduino_xiao_ble
